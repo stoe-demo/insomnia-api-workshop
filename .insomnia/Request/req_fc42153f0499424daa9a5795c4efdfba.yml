@@ -1,0 +1,30 @@
+_id: req_fc42153f0499424daa9a5795c4efdfba
+type: Request
+parentId: wrk_7d6279a8fe6d4f6bb5ed50355fe1356d
+modified: 1655795633798
+created: 1655795182127
+url: "{{ _.graphql }}"
+name: graphql query
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"{\n\tviewer {\n\t\tlogin\n\t\tbio\n\t}\n\trepository(owner:
+    \"stoe-demo\", name: \"sample-repo\")
+    {\n\t\tid\n\t\tnameWithOwner\n\t}\n}\n","variables":{}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ce7ab6c9c17e42958f6ab25963ffbef2
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1649148590362
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

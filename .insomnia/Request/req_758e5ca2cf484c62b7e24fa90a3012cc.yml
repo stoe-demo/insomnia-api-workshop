@@ -1,0 +1,23 @@
+_id: req_758e5ca2cf484c62b7e24fa90a3012cc
+type: Request
+parentId: fld_6300855accdb4260822cc2b377414700
+modified: 1655795447428
+created: 1655795182124
+url: "{{ _.rest }}/app/installations"
+name: list installations
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% jwt _.app_id, _.private_key, _.url_base %}"
+metaSortKey: -1649495738337
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,23 @@
+_id: req_46186c00c37849058e7797172a941377
+type: Request
+parentId: fld_6300855accdb4260822cc2b377414700
+modified: 1655795647669
+created: 1655795182125
+url: "{{ _.rest }}/app/installations/14572032/access_tokens"
+name: installation access token
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% jwt _.app_id, _.private_key, _.url_base %}"
+metaSortKey: -1649495738287
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

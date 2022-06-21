@@ -1,0 +1,37 @@
+_id: req_d6e29c2cba514e44a35653dcfcfcc503
+type: Request
+parentId: wrk_7d6279a8fe6d4f6bb5ed50355fe1356d
+modified: 1655795641162
+created: 1655795182129
+url: "{{ _.graphql }}"
+name: graphql mutation
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: "{\"query\":\"mutation($repositoryId: ID!) {\\n\\tcreateIssue(input:
+    {\\n\\t\\tclientMutationId:
+    \\\"graphql-mutation-demo\\\"\\n\\t\\trepositoryId:
+    $repositoryId\\n\\t\\ttitle: \\\"GraphQL mutation demo\\\"\\n\\t\\tbody:
+    \\\"lorem ipsum dolor sit\\\"\\n\\t})
+    {\\n\\t\\tclientMutationId\\n\\t\\tissue
+    {\\n\\t\\t\\ttitle\\n\\t\\t\\turl\\n\\t\\t}\\n\\t}\\n}\\n\",\"variables\":{\
+    \"repositoryId\":\"{% response 'body',
+    'req_c6ac35649910485a95540f138925140d',
+    'b64::JC5kYXRhLnJlcG9zaXRvcnkuaWQ=::46b', 'never', 60 %}\"}}"
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ce7ab6c9c17e42958f6ab25963ffbef2
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+metaSortKey: -1649148590337
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

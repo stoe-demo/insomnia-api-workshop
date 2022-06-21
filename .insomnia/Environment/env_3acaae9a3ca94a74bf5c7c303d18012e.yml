@@ -1,0 +1,20 @@
+_id: env_3acaae9a3ca94a74bf5c7c303d18012e
+type: Environment
+parentId: wrk_7d6279a8fe6d4f6bb5ed50355fe1356d
+modified: 1655795205326
+created: 1655795182115
+name: Base Environment
+data:
+  url_base: api.github.com
+  rest: https://{{ _.url_base }}
+  graphql: https://{{ _.url_base }}/graphql
+  token: ""
+dataPropertyOrder:
+  "&":
+    - url_base
+    - rest
+    - graphql
+    - token
+color: null
+isPrivate: false
+metaSortKey: 1649148304788

@@ -1,0 +1,23 @@
+_id: req_c9437bf3158b4071a5f2103fb47cc1d4
+type: Request
+parentId: fld_6300855accdb4260822cc2b377414700
+modified: 1655795645764
+created: 1655795182123
+url: "{{ _.rest }}/app"
+name: authenticated app
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% jwt _.app_id, _.private_key, _.url_base %}"
+metaSortKey: -1649495738387
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
